@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact form</title>
+    <style>
+        body{
+            background-color: rgb(236, 236, 193);
+        }
+        textarea{
+            width: 250px;
+            height: 150px;
+        }
+        img{
+            width: 300px;
+            float: left;
+            display: block;
+            height: 415px;
+            object-fit: cover;
+            position: absolute;
+            right: 460px;
+            margin: 0px;
+
+        }
+        #contact{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            border:1px solid black;
+            width: 600px;
+            padding: 30px;
+            background-color: aliceblue;
+            box-shadow: 0px 2px 10px -2px black;
+        
+
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(236, 236, 193);
+            padding-top: 30px;
+            
+        }
+        .names{
+            width: 230px;
+            margin:18px;
+        }
+        .genders{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 20px;
+            float: left;
+        }
+        #submit{
+            width: 256px;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 15px;
+            margin-bottom: -7px;
+
+        }
+        label{
+            float: left;
+        }
+        .invalid{
+            border:1px solid red;
+        }
+        .valid{
+            border:1px solid rgb(0, 155, 0)
+        }
+        #succesM{
+            display:none;
+            background-color: #008000b5;
+            font-size: 20px;
+            width: 660px;
+            margin: 10px;
+        }
+        .succesM.visible{
+            display:block;
+        }
+        
+    
+        
+        
+
+    </style>
+    <script>
+        function require(elem, event, minlength){
+            let value = elem.value;
+            if( value.length < minlength){
+                elem.classList.add("invalid")
+                
+                elem.classList.remove("valid")
+            }else{
+                elem.classList.remove("invalid");
+            
+                elem.classList.add("valid")
+            }
+
+        }
+
+        function clearInvalid(elem){
+            let value = elem.value;
+            
+            elem.classList.remove("invalid");
+            elem.classList.remove("valid");
+            
+        }
+
+        function validation(form, event){ 
+            event.preventDefault();
+            let fields = document.querySelectorAll("[name]");
+            console.log(fields);
+            for(let i = 0; i<= fields.length;i++){
+                let elem = fields[i];
+                elem.onblur(event);
+            }
+            
+            if
+                (document.querySelector(".invalid") !== null){
+                    
+            }else{
+                event.preventDefault();
+                }
+            }
+
+    </script>
+</head>
+<body>
+    <section>
+        <div id="succesM"><span></span></div>
+        <form id="contact" onsubmit="validation(this, event)">
+            <input  class ="names" type="text"  name ="inputName" placeholder="First Name" onfocus="clearInvalid(this, event, 3);"
+            onblur="require(this, event, 3)">
+            <input  class = "names" type="text"  name ="inputName" placeholder="Last name" onfocus="clearInvalid(this, event, 3);"
+            onblur="require(this, event, 3)">
+            <p style="width: 100px;">Gender</p>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input  class =" genders"type="radio" id="male" name="gender" value="male">
+                    <label  for="male" style="widows: 100px;;">
+                        <span>Male</span></label><br/>
+                </li>    
+                <li>
+                    <input  class = " genders" type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br/>
+                </li>
+            </ul>    
+            <textarea name="textarea" placeholder="your message here..." onfocus="clearInvalid(this, event, 20);"
+            onblur="require(this, event, 20 )" ></textarea>
+            <div id="submit">
+                <input id = "subbtn" type="submit" value="submit"
+                style="background-color: rgb(14, 148, 158);border-radius:5px;">
+            </div>
+            <img src="C:\Users\Robert\Desktop\IT\WebBrowser\Front-End\HomeWork\Doom Manipulation\integrated-contact-form.jpg">
+                             
+        </form>
+    </section>   
+    
+    
+    
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+</body>

@@ -1,0 +1,57 @@
+body{
+    width: 1000px;
+    margin:auto;
+    margin-top: 20px;
+ 
+
+}
+section{
+    max-width: 28%;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    text-align: -webkit-center;
+}
+.section-image{
+    width: 100%;
+    border: 1px solid;
+    height: 43%;
+}
+h3{
+    text-align:center;
+}
+p{
+    text-align: center;
+}
+input{
+   width:60px;
+   height: 33px;
+   display: inline-block;
+   
+
+
+
+}
+.input-cart{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+}
+.input-view{
+    background-color:white;
+    color:black;
+    font-weight: bold;
+}
+.star:hover{
+color: yellow;
+
+}
+.star{
+    color:grey}
+.heart{
+    color:grey
+}
+.heart:hover{
+    color:red
+}
