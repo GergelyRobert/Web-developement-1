@@ -1,0 +1,60 @@
+body{
+    background-image: url("gettyimages-769800477.jpg");
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+
+
+
+h1{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 150px; 
+    margin-bottom: 50px;
+}
+    
+#shopping{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 150px;
+}
+#sorting{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 150px;
+    padding: 25px 5px 10px 0px;
+
+}
+#items{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 150px;
+}
+#items td{
+    padding:9px 28px 10px 0px;
+}
+#myBtn{
+    color:black;
+    background-color:#34fdcb;
+    cursor: pointer;
+    transition: all ease-out;
+}
+#myBtn:hover{
+    background-color:#74fd34;
+    box-shadow: 2px 2px 5px 5px rgb(85, 41, 41);
+    transform:scale(1.5) translate(1rem)
+}
+.sortBtn{
+    color: black;
+    background-color:#34fdcb;
+    cursor: pointer;
+
+}
+.sortBtn:hover{
+    background-color: #74fd34;;
+    box-shadow:2px 2px 5px 5px rgb(85, 41, 41); 
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="Shopping list.css" />
+    <script src="Shopping list.js" ></script>
+</head>
+<body onload="draw()">
+   <h1>Shopping List</h1>
+    <div id="shopping">
+       <input type="text" name="lista" onkeypress="return searchKeyPress(event)">
+       <span style="padding-left: 10px;">
+           <input id="myBtn" type="button" name="adauga" value="Add Item" style="border-radius: 3px;" onclick="add(this, event)">
+       </span>
+    </div>
+    <div id="sorting">
+       <input  class ="sortBtn" type="button" name="sortAsc" value="SortAsc" style="border-radius: 3px;" onclick="sort('az')">
+       <span style="padding-left: 15px;">
+           <input class ="sortBtn" type="button" name="sortDesc" value="SortDesc" style="border-radius: 3px;" onclick="sort('za')">
+       </span>
+    </div>
+    <div>
+       <table id="items">
+               <tr>
+                   <td>Item Description</td>
+                   <td>Action</td>
+                </tr>
+                <tr>
+                    <td id="alimentul"></td>
+                    <td><input type="button" name="Mark" value="Mark as buyed" style="border-radius: 3px;" onclick="marked(this,event)" style="background-color: #34fdcb;;"></td>
+                </tr>
+       </table>
+   </div>
+
+</body>
+</html> 
+    
