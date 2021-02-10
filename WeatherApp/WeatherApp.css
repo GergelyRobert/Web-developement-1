@@ -1,0 +1,71 @@
+body{
+    max-width: 100%;
+
+}
+#myInputs{
+    display: flex;
+    justify-content: center;
+    justify-items: stretch;
+    align-content: space-around;
+    background-color: cadetblue;
+
+    
+}
+.txt{
+    width: 500px;
+    
+}
+.myBtns{
+    margin: 4px 5px 6px 20px;
+    background-color: rgb(108, 108, 245);
+    border-radius: 4px;
+    font-family: 'Lexend Mega', sans-serif;
+
+}
+.myBtns:hover{
+    transform:scale(1.5) translateZ(2rem)
+    
+}
+.cityMap{
+    padding: 5px;
+    
+    display: flex;
+    justify-content: center;
+}
+.curWeather{
+    float: left;
+}
+#gmap{
+    width: 90%;
+    margin-top: 40px;
+}
+#vreme{
+    padding: 25px;
+    background-color: beige;
+    border-radius: 3px solid rgb(201, 79, 79)
+    ;
+}
+.ForecastContainer{
+    display: flex;
+    background-color: beige;
+
+}
+.Days{
+    padding: 5px;
+}
+h2{
+    background-color: cadetblue;
+    margin:0px;
+    font-family: 'Lexend Mega', sans-serif;
+    color: rgb(59, 58, 58);
+    
+}
+hr{
+    margin: 0px;
+
+}
+#oras{
+    border-radius: 4px;
+    border-color: cadetblue;
+    border-style:groove;
+}

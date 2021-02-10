@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WeatherApp</title>
+    <link rel="stylesheet" href="WeatherApp.css">
+    <script src="WeatherApp.js"></script>
+</head>
+<body>
+    <div id="myInputs">
+        <input  id= "oras" class="txt" type="text" name="place" placeholder="Type the City" onkeypress="return searchKeyPress(event)">
+
+    
+        <input class="myBtns" type="button" name="afiseazaV" value="Afiseaza Vremea" onclick="getVreme(this, event)">
+        <input class="myBtns" type="button" name="afiseazaP" value="Afiseaza Prognoza" onclick="getPrognoza()">
+
+    </div>
+    <div>
+        <h2>Vremea Acum </h2>
+        <hr />
+        <div id="vreme">
+            <ul>
+                <li>Descriere: </li>
+                    <li>Umiditate: </li>
+                    <li>Presiune: </li>
+                    <li>Temperatura curenta:</li>
+                    <li>Minima zilei: </li>
+                    <li>Maxima zilei:</li>
+            </ul>
+        </div>
+    </div>
+    <div id="PrognozaMeteo">
+        <h2>Vremea in urmatoarele 5 zile</h2>
+        <hr/>
+        <div class="ForecastContainer">
+            <div class="Days">
+                    
+            </div>
+            <div class="Days">
+            
+            </div>
+            <div class="Days">
+            
+            </div>
+            <div class="Days">
+            
+            </div>
+            <div class="Days">
+            
+            </div>
+
+            <div class="Days">
+
+            </div>
+
+        </div>
+    </div>
+	 
+	
+ </body>
+    
+</body> 
+
+
+
+
+
+
+
+
+</body>
+</html>
