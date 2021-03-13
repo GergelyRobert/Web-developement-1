@@ -1,0 +1,39 @@
+
+main{
+    background-color: aliceblue;
+}
+.productImage{
+    width: 150px;
+}
+.productheader{
+    display: flex;
+    padding:10px
+
+}
+.title{
+    margin: 0px auto;
+}
+.hidden{
+    display:none;
+}
+table{
+    width: 1200px;
+    padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+table tr{
+    padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+table td{
+    vertical-align: middle;
+    text-align: center;
+}
+.AddBox label{
+    margin-right: 45px;
+    display: flex;
+    align-self: center;
+
+}
