@@ -77,10 +77,10 @@ function addContact(event){
     contacte.push({
         "nume" : nume,
         "tel": telefon,
-    });
+    })
     }
     document.querySelector("#T_contacts").style.display="block";
-    //draw();
+    draw();
     document.querySelector(".input_form").reset();
 }
 function del(idx){
