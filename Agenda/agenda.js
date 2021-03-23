@@ -60,6 +60,7 @@ function draw(){
                 `
     }
     document.querySelector(".Table_contacts").innerHTML=str;
+    document.querySelector("#T_contacts").style.display="block";
 }
 function addContact(event){
     let nume = document.querySelector("[name = 'name']").value;
