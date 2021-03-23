@@ -1,3 +1,11 @@
+let contacte = [{
+    'Nume':"",
+    'telefon' :"",
+
+}];
+let indexModifica = -1;
+
+
 function requireName(){
     let nameInput = document.querySelector('[name="name"]');
     let nume = nameInput.value;
@@ -34,13 +42,6 @@ function digitLimit(elem,event) {
         event.preventDefault();
     }
 }
-let contacte = [{
-    'Nume':"",
-    'telefon' :"",
-
-}];
-
-  let indexModifica = -1;
 function draw(){
     let str="";
     for( let i = 1;i <contacte.length; i++){
@@ -77,8 +78,8 @@ function addContact(event){
         "tel": telefon,
     });
     }
-    draw();
     document.querySelector("#T_contacts").style.display="block";
+    draw();
     document.querySelector(".input_form").reset();
 }
 function del(idx){
@@ -111,10 +112,4 @@ function editeaza(){
     document.querySelector("#add_contact").classList.remove("hidden");
 
     document.querySelector("form").reset();
-}
-function checkSubmit(idx){
-    let enter = contacte[idx];
-     if(enter && e.keyCode == 13) {
-        document.contacte[idx].submit();
-     }
 }
