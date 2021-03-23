@@ -44,13 +44,7 @@ let contacte = [{
 function draw(){
     let str="";
     for( let i = 1;i <contacte.length; i++){
-        str += ` <thead>
-                <tr>
-                        <th >Nume</th>
-                        <th >Telefon</th>
-                </tr>
-                </thead>
-                <tbody>
+        str += `
                 <tr>
                        <td>${contacte[i].nume}</td>
                        <td>${contacte[i].tel}</td>
@@ -64,18 +58,28 @@ function draw(){
                 <tbody>
                 `
     }
-    document.querySelector("#T_contacts").innerHTML=str;
+    document.querySelector(".T_contacts").innerHTML=str;
 }
-function addContact(){
+function addContact(event){
     let nume = document.querySelector("[name = 'name']").value;
     let telefon = document.querySelector("[name = 'tel']").value;
-
+    if( nume == '' || nume <= 3){
+        event.preventDefault();
+        alert('please enter a  valid name');
+        return false;
+    }else if(telefon =="" || telefon < 10){
+        event.preventDefault();
+        alert('Please enter a  valid phone number');
+        return false;
+    }else{
     contacte.push({
         "nume" : nume,
         "tel": telefon,
     });
-
+    }
     draw();
+    document.querySelector("#T_contacts").style.display="block";
+    document.querySelector(".input_form").reset();
 }
 function del(idx){
     if(confirm('Esti Sigur ca vrei sa stergi contactul ?')){
@@ -108,9 +112,9 @@ function editeaza(){
 
     document.querySelector("form").reset();
 }
-function checkSubmit(elem, event){
+function checkSubmit(idx){
     let enter = contacte[idx];
-     if(e && e.keyCode == 13) {
+     if(enter && e.keyCode == 13) {
         document.contacte[idx].submit();
      }
 }
