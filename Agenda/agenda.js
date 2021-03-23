@@ -58,7 +58,7 @@ function draw(){
                 <tbody>
                 `
     }
-    document.querySelector(".T_contacts").innerHTML=str;
+    document.querySelector(".Table_contacts").innerHTML=str;
 }
 function addContact(event){
     let nume = document.querySelector("[name = 'name']").value;
