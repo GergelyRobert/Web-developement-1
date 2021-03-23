@@ -59,7 +59,7 @@ function draw(){
                 <tbody>
                 `
     }
-    document.querySelector(".Table_contacts").innerHTML=str;
+    document.querySelector(".T_contacts").innerHTML=str;
     document.querySelector("#T_contacts").style.display="block";
 }
 function addContact(event){
@@ -80,7 +80,7 @@ function addContact(event){
     });
     }
     document.querySelector("#T_contacts").style.display="block";
-    draw();
+    //draw();
     document.querySelector(".input_form").reset();
 }
 function del(idx){
