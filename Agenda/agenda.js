@@ -59,8 +59,8 @@ function draw(){
                 <tbody>
                 `
     }
-    document.querySelector(".T_contacts").innerHTML=str;
-    document.querySelector("#T_contacts").style.display="block";
+    document.querySelector(".Table_contacts").innerHTML=str;
+    //document.querySelector("#T_contacts").style.display="block";
 }
 function addContact(event){
     let nume = document.querySelector("[name = 'name']").value;
@@ -79,8 +79,8 @@ function addContact(event){
         "tel": telefon,
     })
     }
+     draw();
     document.querySelector("#T_contacts").style.display="block";
-    draw();
     document.querySelector(".input_form").reset();
 }
 function del(idx){
