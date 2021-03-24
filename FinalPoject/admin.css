@@ -1,0 +1,144 @@
+
+main{
+    background-color: aliceblue;
+}
+.productImage{
+    width: 150px;
+}
+.productheader{
+    display: flex;
+    padding:10px
+
+}
+.title{
+    margin: 0px auto;
+}
+.hidden{
+    display:none;
+}
+table{
+    width: 1200px;
+    padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+table tr{
+    padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+table td{
+    vertical-align: middle;
+    text-align: center;
+}
+.AddBox label{
+    margin-right: 45px;
+    display: flex;
+    align-self: center;
+
+}
+/*Responsive*/
+@media (max-width: 575.98px) { 
+    .container-md{
+        width: 680px;
+        margin: 0 auto;
+        
+    }
+    form{
+        width: 265px;
+        height: 33px;
+    }
+    .cart_admin_btn{
+        display: flex;
+    }
+    .container-sm{
+        width: 1200px;
+    }
+    main{
+        width: 1200px;
+    }
+    footer{
+        width: 1200px
+    }
+}
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    body{
+        max-width: 99%;
+        margin: 0 auto;
+    }
+    form{
+        width: 265px;
+        height: 33px;
+    }
+    .cart_admin_btn{
+        display: flex;
+    }
+    .container-md{
+        width: 680px;
+        margin: 0 auto;
+        
+    }
+    form{
+        width: 265px;
+        height: 33px;
+    }
+    .cart_admin_btn{
+        display: flex;
+    }
+    .container-sm{
+        width: 1200px;
+    }
+    main{
+        width: 1200px;
+    }
+    footer{
+        width: 1200px
+    }
+}
+
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    .container-md{
+        width: 680px;
+        margin: 0 auto;
+        
+    }
+    form{
+        width: 265px;
+        height: 33px;
+    }
+    .cart_admin_btn{
+        display: flex;
+    }
+    .container-sm{
+        width: 1200px;
+    }
+    main{
+        width: 1200px;
+    }
+    footer{
+        width: 1200px
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container-md{
+        width: 680px;
+        margin: 0 auto;
+        
+    }
+    form{
+        width: 265px;
+        height: 33px;
+    }
+    .cart_admin_btn{
+        display: flex;
+    }
+    .container-sm{
+        width: 1200px;
+    }
+    main{
+        width: 1200px;
+    }
+    footer{
+        width: 1200px
+    }
+}
