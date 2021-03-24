@@ -43,7 +43,7 @@ function draw(){
                             <p class="stock"><span class="pieces">${cart[i].quantity}</span> </p>
                             <button class="increment stock" onclick="increment('${cart[i].id}'); event.preventDefault()">+</button>
                         </div>
-                        //<div id="snackbar">More quantity is not in stock.</div>
+                       
                     </td>
                     <td>$ <span class="total">${((parseInt(cart[i].quantity) * parseInt(produs.pret))/parseInt("1")).toFixed(2)}</span></td>
                     <td><a href="#" class="removeBtn" onclick="removeItem('${i}','${produs.nume}')">Remove</a></td>
